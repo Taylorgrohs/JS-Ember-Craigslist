@@ -1,0 +1,7 @@
+<div class="pushRight">
+  {{#each sortedRentals as |roomrent|}}
+     {{rent-tile roomrent=roomrent}}
+  {{/each}}
+</div>
+
+{{new-roomrent saveRoomRent="saveRoomRent"}}

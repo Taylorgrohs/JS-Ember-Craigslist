@@ -3,7 +3,7 @@
     <div>
       <form>
         <div class="form-group">
-          <label for="title">Post Tile</label>
+          <label for="title">Post Title</label>
           {{input value=title id="title"}}
         </div>
 
@@ -17,6 +17,11 @@
         <div class="form-group">
           <label for="image">Image URL</label>
           {{input value=image id="image"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price per month</label>
+          {{input value=price id="price"}}
         </div>
 
         <button {{action 'saveRoomRent'}}>Post</button>

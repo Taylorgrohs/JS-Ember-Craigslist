@@ -9,7 +9,17 @@ export default Ember.Component.extend({
 
     roomrentFormHide(){
       this.set('addNewRoomRent', false);
-    }
+    },
 
+    saveRoomRent() {
+      var params = {
+        title: this.get('title'),
+        content: this.get('content'),
+        image:  this.get('image') ? this.get('image') : "",
+        price: parseInt(this.get('price')),
+      }
+      this.set('addNewRoomRent', false);
+      this.sendAction('saveRoomRent', params);
+    }
   }
 });
