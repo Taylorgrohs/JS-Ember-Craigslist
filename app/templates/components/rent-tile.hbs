@@ -1,4 +1,5 @@
 <h4>{{roomrent.title}}</h4>
-<h5>${{roomrent.price}} a month</h5>
+<h5>${{roomrent.price}} a month - {{rental-cost roomrent.price}}</h5>
 <h5>{{{textFormat roomrent.content}}}</h5>
-<img src={{roomrent.image}} alt="room">
+<img src={{roomrent.image}}>
+<p>{{no-image roomrent.image}}</p>
