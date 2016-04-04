@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('room-rent');
+  this.route('room-wanted');
+  this.route('missed-connection');
+  this.route('single-profile');
 });
 
 export default Router;

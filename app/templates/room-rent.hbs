@@ -1,0 +1,9 @@
+<h4>Current Rooms for Rent</h4>
+
+<div class="pushRight">
+  {{#each model as |roomrent|}}
+     {{rent-tile roomrent=roomrent}}
+  {{/each}}
+</div>
+
+{{new-roomrent saveRoomRent="saveRoomRent"}}

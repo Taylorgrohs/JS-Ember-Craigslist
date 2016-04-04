@@ -1,0 +1,28 @@
+{{#if addNewRoomRent}}
+  <h2>New Rental</h2>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">Post Tile</label>
+          {{input value=title id="title"}}
+        </div>
+
+        <div class="form-group">
+          <div>
+            <label for="content">Describe the place you have available</label>
+          </div>
+          {{textarea class="big" value=content id="content"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input value=image id="image"}}
+        </div>
+
+        <button {{action 'saveRoomRent'}}>Post</button>
+        <button {{action 'roomrentFormHide'}}>Hide Form</button>
+      </form>
+    </div>
+{{else}}
+  <button {{action 'roomrentFormShow'}}>New</button>
+{{/if}}

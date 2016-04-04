@@ -3,7 +3,32 @@ body {
   font-family: serif;
 }
 
+hr {
+  margin: 1px;
+}
+
+img {
+  padding-bottom: 4px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.pushRight {
+  margin-left: 20px;
+  color: black;
+}
+
 .box {
   background-color: lightgrey;
   text-align: center;
+}
+
+.normal, a {
+  font-family: sans-serif;
+  color: blue;
+}
+
+.big {
+  width: 400px;
+  height: 200px;
 }
