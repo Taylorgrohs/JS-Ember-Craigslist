@@ -1,0 +1,9 @@
+body {
+  color: blue;
+  font-family: serif;
+}
+
+.box {
+  background-color: lightgrey;
+  text-align: center;
+}
